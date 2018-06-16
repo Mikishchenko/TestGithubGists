@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		250215A120D4EB6A00BF8F00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250215A020D4EB6A00BF8F00 /* AppDelegate.swift */; };
-		250215A320D4EB6A00BF8F00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250215A220D4EB6A00BF8F00 /* ViewController.swift */; };
+		250215A320D4EB6A00BF8F00 /* ListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250215A220D4EB6A00BF8F00 /* ListTVC.swift */; };
 		250215A620D4EB6A00BF8F00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250215A420D4EB6A00BF8F00 /* Main.storyboard */; };
 		250215A920D4EB6A00BF8F00 /* GithubGists.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 250215A720D4EB6A00BF8F00 /* GithubGists.xcdatamodeld */; };
 		250215AB20D4EB6B00BF8F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250215AA20D4EB6B00BF8F00 /* Assets.xcassets */; };
 		250215AE20D4EB6B00BF8F00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250215AC20D4EB6B00BF8F00 /* LaunchScreen.storyboard */; };
+		250215B620D4F00600BF8F00 /* ListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250215B520D4F00600BF8F00 /* ListTVCell.swift */; };
+		250215B820D4F04800BF8F00 /* GistDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250215B720D4F04800BF8F00 /* GistDetailTVC.swift */; };
+		250215BA20D5036B00BF8F00 /* CommitTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250215B920D5036B00BF8F00 /* CommitTVCell.swift */; };
+		250215BC20D5110300BF8F00 /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250215BB20D5110300BF8F00 /* CoreDataHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2502159D20D4EB6A00BF8F00 /* GithubGists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubGists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		250215A020D4EB6A00BF8F00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		250215A220D4EB6A00BF8F00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		250215A220D4EB6A00BF8F00 /* ListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTVC.swift; sourceTree = "<group>"; };
 		250215A520D4EB6A00BF8F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		250215A820D4EB6A00BF8F00 /* GithubGists.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GithubGists.xcdatamodel; sourceTree = "<group>"; };
 		250215AA20D4EB6B00BF8F00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		250215AD20D4EB6B00BF8F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		250215AF20D4EB6B00BF8F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		250215B520D4F00600BF8F00 /* ListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTVCell.swift; sourceTree = "<group>"; };
+		250215B720D4F04800BF8F00 /* GistDetailTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailTVC.swift; sourceTree = "<group>"; };
+		250215B920D5036B00BF8F00 /* CommitTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitTVCell.swift; sourceTree = "<group>"; };
+		250215BB20D5110300BF8F00 /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				250215A020D4EB6A00BF8F00 /* AppDelegate.swift */,
-				250215A220D4EB6A00BF8F00 /* ViewController.swift */,
+				250215BB20D5110300BF8F00 /* CoreDataHandler.swift */,
+				250215A220D4EB6A00BF8F00 /* ListTVC.swift */,
+				250215B520D4F00600BF8F00 /* ListTVCell.swift */,
+				250215B720D4F04800BF8F00 /* GistDetailTVC.swift */,
+				250215B920D5036B00BF8F00 /* CommitTVCell.swift */,
 				250215A420D4EB6A00BF8F00 /* Main.storyboard */,
 				250215AA20D4EB6B00BF8F00 /* Assets.xcassets */,
 				250215AC20D4EB6B00BF8F00 /* LaunchScreen.storyboard */,
@@ -138,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				250215A320D4EB6A00BF8F00 /* ViewController.swift in Sources */,
+				250215BC20D5110300BF8F00 /* CoreDataHandler.swift in Sources */,
+				250215B820D4F04800BF8F00 /* GistDetailTVC.swift in Sources */,
+				250215A320D4EB6A00BF8F00 /* ListTVC.swift in Sources */,
+				250215B620D4F00600BF8F00 /* ListTVCell.swift in Sources */,
 				250215A920D4EB6A00BF8F00 /* GithubGists.xcdatamodeld in Sources */,
+				250215BA20D5036B00BF8F00 /* CommitTVCell.swift in Sources */,
 				250215A120D4EB6A00BF8F00 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NJ6BY872Y6;
 				INFOPLIST_FILE = GithubGists/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +311,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.mik.GithubGists;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NJ6BY872Y6;
 				INFOPLIST_FILE = GithubGists/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.mik.GithubGists;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
