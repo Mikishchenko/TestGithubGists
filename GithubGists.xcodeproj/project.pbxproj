@@ -17,6 +17,8 @@
 		250215B820D4F04800BF8F00 /* GistDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250215B720D4F04800BF8F00 /* GistDetailTVC.swift */; };
 		250215BA20D5036B00BF8F00 /* CommitTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250215B920D5036B00BF8F00 /* CommitTVCell.swift */; };
 		250215BC20D5110300BF8F00 /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250215BB20D5110300BF8F00 /* CoreDataHandler.swift */; };
+		252C1E6520D5430B003661E4 /* GistsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252C1E6420D5430B003661E4 /* GistsData.swift */; };
+		25C63BD720D77E9500D6F47A /* SingleGistData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C63BD620D77E9500D6F47A /* SingleGistData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		250215B720D4F04800BF8F00 /* GistDetailTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailTVC.swift; sourceTree = "<group>"; };
 		250215B920D5036B00BF8F00 /* CommitTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitTVCell.swift; sourceTree = "<group>"; };
 		250215BB20D5110300BF8F00 /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
+		252C1E6420D5430B003661E4 /* GistsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsData.swift; sourceTree = "<group>"; };
+		25C63BD620D77E9500D6F47A /* SingleGistData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleGistData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 			children = (
 				250215A020D4EB6A00BF8F00 /* AppDelegate.swift */,
 				250215BB20D5110300BF8F00 /* CoreDataHandler.swift */,
+				252C1E6420D5430B003661E4 /* GistsData.swift */,
+				25C63BD620D77E9500D6F47A /* SingleGistData.swift */,
 				250215A220D4EB6A00BF8F00 /* ListTVC.swift */,
 				250215B520D4F00600BF8F00 /* ListTVCell.swift */,
 				250215B720D4F04800BF8F00 /* GistDetailTVC.swift */,
@@ -150,12 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25C63BD720D77E9500D6F47A /* SingleGistData.swift in Sources */,
 				250215BC20D5110300BF8F00 /* CoreDataHandler.swift in Sources */,
 				250215B820D4F04800BF8F00 /* GistDetailTVC.swift in Sources */,
 				250215A320D4EB6A00BF8F00 /* ListTVC.swift in Sources */,
 				250215B620D4F00600BF8F00 /* ListTVCell.swift in Sources */,
 				250215A920D4EB6A00BF8F00 /* GithubGists.xcdatamodeld in Sources */,
 				250215BA20D5036B00BF8F00 /* CommitTVCell.swift in Sources */,
+				252C1E6520D5430B003661E4 /* GistsData.swift in Sources */,
 				250215A120D4EB6A00BF8F00 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

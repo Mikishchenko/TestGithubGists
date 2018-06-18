@@ -19,13 +19,14 @@ class ListTableViewCell: UITableViewCell {
    var gist: Gist? {
       didSet {
          guard let gist = gist else { return }
-         
-         userAvatarImage.image = UIImage(named: gist.userAvatar!)
-         gistNameLabel.text = gist.gistName
-         userNameLabel.text = gist.userName
+         guard gist.userAvatar != nil else { return }
+            self.userAvatarImage.image = UIImage(data: gist.userAvatar!)
+         guard gist.gistName != nil else { return }
+            self.gistNameLabel.text = gist.gistName
+         guard gist.userName != nil else { return }
+            self.userNameLabel.text = gist.userName
       }
    }
-   
    override func awakeFromNib() {
       super.awakeFromNib()
    }

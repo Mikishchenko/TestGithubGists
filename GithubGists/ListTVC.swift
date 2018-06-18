@@ -36,19 +36,31 @@ class ListTableVIewController: UITableViewController {
    }
    
    // MARK: - TableViewDelegate
+   override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+      return 72
+   }
    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
       if tableView.dequeueReusableCell(withIdentifier: "ListsCell",
-                                                  for: indexPath) is ListTableViewCell {
+                                       for: indexPath) is ListTableViewCell {
          currentGist = gistsList?[indexPath.row]
-         OperationQueue.main.addOperation {
-            [weak self] in
-            self?.performSegue(withIdentifier: "GistDetailSegue", sender: self)
-         }
+         self.performSegue(withIdentifier: "GistDetailSegue", sender: self)
       }
    }
    
+   // MARK: - Кнопка очистки CoreData
+   @IBAction func deleteDataButton(_ sender: UIBarButtonItem) {
+      if CoreDataHandler.cleanDelete() {
+         gistsList = CoreDataHandler.fetchObject()
+         tableView.reloadData()
+      }
+   }
+   
+   // MARK: - Кнопка запроса данных с github.api
+   @IBAction func addDataButton(_ sender: UIBarButtonItem) {
+      gistsRequest()
+   }
    // MARK: - Кнопка обновления списка
-   @IBAction func refreshButton(_ sender: UIBarButtonItem) {
+   @IBAction func refreshListButton(_ sender: UIBarButtonItem) {
       gistsList = CoreDataHandler.fetchObject()
       self.tableView.reloadData()
    }

@@ -12,8 +12,8 @@ class CommitTableViewCell: UITableViewCell {
    
    // MARK: - Outlets
    @IBOutlet weak var commitsDateLabel: UILabel!
-   @IBOutlet weak var codeStringsPlusLabel: UILabel!
-   @IBOutlet weak var codeStringsMinusLabel: UILabel!
+   @IBOutlet weak var additionsLabel: UILabel!
+   @IBOutlet weak var deletionsLabel: UILabel!
    
    override func awakeFromNib() {
       super.awakeFromNib()

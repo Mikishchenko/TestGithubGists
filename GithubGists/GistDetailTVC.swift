@@ -19,12 +19,22 @@ class GistDetailTableViewController: UITableViewController {
    override func viewDidLoad() {
       super.viewDidLoad()
       
-      userAvatarImage.image = UIImage(named: currentGist?.userAvatar! ?? "")
+      userAvatarImage.image = UIImage(data: (currentGist?.userAvatar!)!)
       gistNameLabel.text = currentGist?.gistName ?? ""
       userNameLabel.text = currentGist?.userName ?? ""
       gistContentLabel.text = currentGist?.gistContent ?? ""
    }
    
+   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+      <#code#>
+   }
+   
+   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+      <#code#>
+   }
+   override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+      return 40
+   }
    /*
     // MARK: - Navigation
     
